@@ -1,9 +1,18 @@
-const questions = document.querySelectorAll(".faq-question");
+const faqItems = document.querySelectorAll(".faq-item");
 
-questions.forEach(q => {
-  q.addEventListener("click", (e) => {
-    e.stopPropagation(); 
-    const answer = q.nextElementSibling;
+faqItems.forEach(item => {
+  const question = item.querySelector(".faq-question");
+  const answer = item.querySelector(".faq-answer");
+  const toggle = item.querySelector(".faq-toggle");
+
+  toggle.addEventListener("click", () => {
+
     answer.classList.toggle("show");
+
+    if (toggle.textContent === "+") {
+      toggle.textContent = "–";
+    } else {
+      toggle.textContent = "+";
+    }
   });
 });

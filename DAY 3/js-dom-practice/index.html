@@ -1,39 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FAQ Accordion</title>
-  <style>
-    .faq-item {
-      border: 1px solid #ddd;
-      padding: 15px;
-      margin-bottom: 10px;
-      border-radius: 8px;
-    }
-    .faq-question {
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 18px;
-    }
-    .faq-answer {
-      color: #444;
-    }
-    .faq-answer.show {
-      display: block;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <h1>FAQ Accordion</h1>
 
-  <div class="faq-item">
-    <div class="faq-question">What is JavaScript?</div>
-    <div class="faq-answer">JavaScript is a programming language used for web development.</div>
-  </div>
+  <div class="faq-container">
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>What is JavaScript?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        JavaScript is a programming language used to build interactive websites.
+      </div>
+    </div>
 
-  <div class="faq-item">
-    <div class="faq-question">What is DOM?</div>
-    <div class="faq-answer">DOM stands for Document Object Model.</div>
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>What is DOM?</span>
+        <span class="faq-toggle">+</span>
+      </div>
+      <div class="faq-answer">
+        DOM stands for Document Object Model — it lets JS interact with HTML.
+      </div>
+    </div>
+
   </div>
 
   <script src="app.js"></script>

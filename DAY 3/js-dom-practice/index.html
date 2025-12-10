@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FAQ Accordion</title>
+  <style>
+    .faq-item {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+    }
+    .faq-question {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .faq-answer {
+      color: #444;
+    }
+    .faq-answer.show {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>FAQ Accordion</h1>
+
+  <div class="faq-item">
+    <div class="faq-question">What is JavaScript?</div>
+    <div class="faq-answer">JavaScript is a programming language used for web development.</div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">What is DOM?</div>
+    <div class="faq-answer">DOM stands for Document Object Model.</div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
